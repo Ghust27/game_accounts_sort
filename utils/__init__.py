@@ -35,10 +35,10 @@ def elos(arquivo,target):
 
             if target == 'now':
                 elo_target = conta["informacoes"]["Elo"].split(' ')[0]
-                dir = 'game_accounts_sort\elos_atuais'
+                dir = 'game_accounts_sort/elos_atuais'
             elif target == 'before':
                 elo_target = conta["informacoes"]["OldElo"].split(' ')[0]
-                dir = 'game_accounts_sort\elos_antigos'
+                dir = 'game_accounts_sort/elos_antigos'
             
             if elo_target not in possibilidades:
                 contas['unknown'].append(conta)
